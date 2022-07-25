@@ -1,6 +1,6 @@
 <form class="wrap">
   <div class="search">
-    <h3>Search country by name filter : </h3>
+    <h3>Search interview by name filter : </h3>
     <input class="searchTerm" type="text" name="searchTerm" 
       placeholder="Filter by country name"
       [(ngModel)]="searchTerm" (input)="search(searchTerm)" />
@@ -11,20 +11,22 @@
   <thead>
     <tr>
       <th scope="col">#</th>
-      <th scope="col">Country</th>
+      <th scope="col">Name</th>
       <th scope="col">Area</th>
-      <th scope="col">Population</th>
+      <th scope="col">Frage</th>
+      <th scope="col">Antwort</th>
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let country of countries | searchFilter: searchTerm; index as i">
+    <tr *ngFor="let interview of interviews | searchFilter: searchTerm; index as i">
       <td scope="row">{{ i + 1 }}</td>
       <td>
-        <img [src]="'https://upload.wikimedia.org/wikipedia/commons/' + country.flag" class="mr-2" style="width: 20px">
-        {{ country.name }}
+        <!-- <img [src]="'https://upload.wikimedia.org/wikipedia/commons/' + interview.flag" class="mr-2" style="width: 20px"> -->
+        {{ interview.name }}
       </td>
-      <td>{{ country.area | number }}</td>
-      <td>{{ country.population | number }}</td>
+      <td>{{ interview.area }}</td>
+      <td>{{ interview.question  }}</td>
+      <td>{{ interview.answer  }}</td>
     </tr>
   </tbody>
 </table>

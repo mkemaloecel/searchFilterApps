@@ -1,11 +1,11 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 
-interface Country {
+interface Interview {
   name: string;
-  flag: string;
-  area: number;
-  population: number;
+  area: string;
+  question: string;
+  answer: string;
 }
 
 @Component({
@@ -15,22 +15,22 @@ interface Country {
 })
 export class AppComponent implements OnInit {
   searchTerm = '';
-  countries: Country[] = [];
-  allCountries: Country[] = [];
+  interviews: Interview[] = [];
+  allInterviews: Interview[] = [];
 
   constructor(private http: HttpClient) { }
 
   ngOnInit(): void {
     this.http
-      .get<Country[]>('./assets/data/db.json')
-      .subscribe((data: Country[]) => {
-        this.countries = data;
-        this.allCountries = this.countries;
+      .get<Interview[]>('./assets/data/db.json')
+      .subscribe((data: Interview[]) => {
+        this.interviews = data;
+        this.allInterviews = this.interviews;
       });
   }
 
   search(value: string): void {
-    this.countries = this.allCountries.filter((val) =>
+    this.interviews = this.allInterviews.filter((val) =>
       val.name.toLowerCase().includes(value)
     );
   }
