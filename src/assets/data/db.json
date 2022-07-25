@@ -6,9 +6,46 @@
       "answer": "Representational State Transfer/ Kommunikation zwischen Server und Client"
     },
     {
+      "name": "Git",
+      "area": "Java",
+      "question": "Git",
+      "answer": "Git ist eine freie Software zur verteilten Versionsverwaltung von Dateien, die durch Linus Torvalds initiiert wurde."
+    },
+    {
+      "name": "Design Pattern & Entwurfsmuster",
+      "area": "Java",
+      "question": "Was ist Design Pattern",
+      "answer": "Entwurfsmuster sind bewährte Lösungsschablonen für wiederkehrende Entwurfsprobleme sowohl in der Architektur als auch in der Softwarearchitektur und -entwicklung. Sie stellen damit eine wiederverwendbare Vorlage zur Problemlösung dar, die in einem bestimmten Zusammenhang einsetzbar ist."
+    },
+    {
+      "name": "Design Pattern & Entwurfsmuster & Beispiele",
+      "area": "Java",
+      "question": "Design Pattern Beispiele",
+      "answer": "Builder, Factory method, Prototype, Singleton(Beans)"
+    },
+    {
+      "name": "Docker & Cloud",
+      "area": "Java",
+      "question": "Docker und Cloud unterschiede",
+      "answer": "Die Virtualisierungssoftware ist inzwischen für viele Betriebssysteme und Cloud-Umgebungen verfügbar. Gegenüber virtuellen Maschinen spart Docker die Installation eines Gast-Betriebssystems. Cloud-Anbieter setzen mit Modellen wie Containers-as-a-Service auf Nutzer:innen von Docker und anderen Container-Systemen."
+    },
+    {
       "name": "Dependency injection",
       "area": "Java",
       "question": "Was ist Dependency injection?",
       "answer": "Dependency Injection (deutsch: Einbringen von Abhängigkeiten) ist ein Entwurfsmuster der objektorientierten Programmierung (OOP), bei dem Abhängigkeit zwischen Objekte erst zur Laufzeit hergestellt werden."
+    },
+    {
+      "name": "Docker",
+      "area": "Java",
+      "question": "Was ist Docker?",
+      "answer": "Docker ist eine Freie Software zur Isolierung von Anwendungen mit Hilfe von Containervirtualisierung. Docker vereinfacht die Bereitstellung von Anwendungen, weil sich Container, die alle nötigen Pakete enthalten, leicht als Dateien transportieren und installieren lassen."
+    }
+    ,
+    {
+      "name": "Cloud",
+      "area": "Java",
+      "question": "Was ist Cloud Computing?",
+      "answer": "Cloud Computing beschreibt ein Modell, das bei Bedarf – meist über das Internet und geräteunabhängig – zeitnah und mit wenig Aufwand geteilte Computerressourcen als Dienstleistung, etwa in Form von Servern, Datenspeicher oder Applikationen, bereitstellt und nach Nutzung abrechnet."
     }
 ]
